@@ -13,6 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidComponents"
         tools:targetApi="31">
+        <service
+            android:name=".NewService"
+            android:enabled="true"
+            android:exported="true"></service>
+
         <activity
             android:name=".Activity_contentProvider"
             android:exported="false" />
