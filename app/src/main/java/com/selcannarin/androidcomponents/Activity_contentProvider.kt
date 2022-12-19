@@ -15,7 +15,7 @@ class Activity_contentProvider : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_content_provider)
 
-        //Reading contacts with Content Provider and query()
+        //Reading contacts with Content Provider from phone
         if(ActivityCompat.checkSelfPermission(this,Manifest.permission.READ_CONTACTS)!=PackageManager.PERMISSION_GRANTED)
         {
             ActivityCompat.requestPermissions(this,Array(1){Manifest.permission.READ_CONTACTS},111)
