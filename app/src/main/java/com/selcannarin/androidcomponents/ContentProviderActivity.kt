@@ -10,7 +10,7 @@ import android.widget.ListView
 import android.widget.SimpleCursorAdapter
 import androidx.core.app.ActivityCompat
 
-class Activity_contentProvider : AppCompatActivity() {
+class ContentProviderActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_content_provider)
@@ -47,8 +47,8 @@ class Activity_contentProvider : AppCompatActivity() {
 
         var adapter = SimpleCursorAdapter(this,android.R.layout.simple_list_item_2,rs,from,to,0)
 
-        val listview1 = findViewById<View>(R.id.listview1) as ListView
-        listview1.adapter=adapter
+        val listview_content = findViewById<View>(R.id.listview_content) as ListView
+        listview_content.adapter=adapter
 
     }
 

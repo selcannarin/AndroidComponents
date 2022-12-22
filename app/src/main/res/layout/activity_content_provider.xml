@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_contentProvider">
+    tools:context=".ContentProviderActivity">
 
     <ListView
-        android:id="@+id/listview1"
+        android:id="@+id/listview_content"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"
@@ -16,17 +16,17 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_contact" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txt_contact"
         android:layout_width="198dp"
         android:layout_height="44dp"
         android:layout_marginTop="65dp"
         android:layout_marginBottom="44dp"
         android:text="Your Contact List"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/listview1"
+        app:layout_constraintBottom_toTopOf="@+id/listview_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

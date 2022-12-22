@@ -7,15 +7,15 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 
-class Activity_broadcastReceiver : AppCompatActivity() {
-    lateinit var receiver: NewBroadcastReceiver
+class BroadcastReceiverActivity : AppCompatActivity() {
+    lateinit var receiver: AirPlaneBroadcastReceiver
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_broadcast_receiver)
         val show = findViewById<View>(R.id.button_show) as Button
         // setting on click event listener
         show.setOnClickListener {
-            receiver = NewBroadcastReceiver()
+            receiver = AirPlaneBroadcastReceiver()
             // Intent Filter is useful to determine which apps wants to receive
             // which intents,since here we want to respond to change of
             // airplane mode

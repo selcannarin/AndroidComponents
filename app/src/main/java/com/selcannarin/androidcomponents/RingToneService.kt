@@ -6,7 +6,7 @@ import android.media.MediaPlayer
 import android.os.IBinder
 import android.provider.Settings
 
-class NewService : Service() {
+class RingToneService : Service() {
 
     override fun onBind(intent: Intent): IBinder? {
         return null

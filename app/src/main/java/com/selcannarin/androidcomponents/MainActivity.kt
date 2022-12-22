@@ -3,14 +3,8 @@ package com.selcannarin.androidcomponents
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract
-import android.util.Log
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
 import android.widget.Button
-import android.widget.Toast
-import androidx.core.database.getStringOrNull
 
 
 class MainActivity : AppCompatActivity() {
@@ -20,28 +14,28 @@ class MainActivity : AppCompatActivity() {
         val b1 = findViewById<View>(R.id.button_activity) as Button
         // setting on click event listener
         b1.setOnClickListener {
-            val intent = Intent(this@MainActivity, Activity_activity::class.java)
+            val intent = Intent(this@MainActivity, ActivityActivity::class.java)
             startActivity(intent)
         }
 
         val b2 = findViewById<View>(R.id.button_service) as Button
         // setting on click event listener
         b2.setOnClickListener {
-            val intent = Intent(this@MainActivity, Activity_service::class.java)
+            val intent = Intent(this@MainActivity, ServiceActivity::class.java)
             startActivity(intent)
         }
 
-        val b3 = findViewById<View>(R.id.button_contentP) as Button
+        val b3 = findViewById<View>(R.id.button_content_provider) as Button
         // setting on click event listener
         b3.setOnClickListener {
-            val intent = Intent(this@MainActivity, Activity_contentProvider::class.java)
+            val intent = Intent(this@MainActivity, ContentProviderActivity::class.java)
             startActivity(intent)
         }
 
-        val b4 = findViewById<View>(R.id.button_broadcastR) as Button
+        val b4 = findViewById<View>(R.id.button_broadcast_receiver) as Button
         // setting on click event listener
         b4.setOnClickListener {
-            val intent = Intent(this@MainActivity, Activity_broadcastReceiver::class.java)
+            val intent = Intent(this@MainActivity, BroadcastReceiverActivity::class.java)
             startActivity(intent)
         }
 

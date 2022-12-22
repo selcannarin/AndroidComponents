@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txt_components"
         android:layout_width="267dp"
         android:layout_height="32dp"
         android:layout_marginTop="111dp"
@@ -30,7 +30,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button_service"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_components" />
 
     <Button
         android:id="@+id/button_service"
@@ -38,24 +38,24 @@
         android:layout_height="60dp"
         android:layout_marginBottom="72dp"
         android:text="Service"
-        app:layout_constraintBottom_toTopOf="@+id/button_contentP"
+        app:layout_constraintBottom_toTopOf="@+id/button_content_provider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_activity" />
 
     <Button
-        android:id="@+id/button_contentP"
+        android:id="@+id/button_content_provider"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginBottom="68dp"
         android:text="Content Provider"
-        app:layout_constraintBottom_toTopOf="@+id/button_broadcastR"
+        app:layout_constraintBottom_toTopOf="@+id/button_broadcast_receiver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_service" />
 
     <Button
-        android:id="@+id/button_broadcastR"
+        android:id="@+id/button_broadcast_receiver"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_marginBottom="167dp"
@@ -63,6 +63,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_contentP" />
+        app:layout_constraintTop_toBottomOf="@+id/button_content_provider" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

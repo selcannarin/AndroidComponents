@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_activity">
+    tools:context=".ActivityActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txt_activity"
         android:layout_width="121dp"
         android:layout_height="60dp"
         android:layout_marginTop="192dp"
@@ -28,7 +28,7 @@
         android:layout_marginBottom="469dp"
         android:text="Start"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/txt_activity"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_activity" />
 </androidx.constraintlayout.widget.ConstraintLayout>

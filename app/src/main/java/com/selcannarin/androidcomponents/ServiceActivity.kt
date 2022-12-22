@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 
-class Activity_service : AppCompatActivity() {
+class ServiceActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_service)
@@ -14,13 +14,13 @@ class Activity_service : AppCompatActivity() {
         val start = findViewById<View>(R.id.button_start) as Button
         // setting on click event listener
         start.setOnClickListener {
-            startService(Intent(this, NewService::class.java))
+            startService(Intent(this, RingToneService::class.java))
         }
 
         val stop = findViewById<View>(R.id.button_stop) as Button
         // setting on click event listener
         stop.setOnClickListener {
-            stopService(Intent(this, NewService::class.java))
+            stopService(Intent(this, RingToneService::class.java))
         }
 
     }

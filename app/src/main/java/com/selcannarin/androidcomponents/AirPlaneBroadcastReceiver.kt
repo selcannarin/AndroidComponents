@@ -3,12 +3,10 @@ package com.selcannarin.androidcomponents
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.net.NetworkInfo
-import android.net.wifi.WifiManager
 import android.widget.Toast
 
 
-class NewBroadcastReceiver : BroadcastReceiver() {
+class AirPlaneBroadcastReceiver : BroadcastReceiver() {
 
     override fun onReceive(context: Context, intent: Intent) {
         // intent contains the information about the broadcast
