@@ -3,38 +3,40 @@ package com.selcannarin.androidcomponents
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
+import com.selcannarin.androidcomponents.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val b1 = findViewById<View>(R.id.button_activity) as Button
+       // setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        // val b1 = findViewById<View>(R.id.button_activity) as Button
         // setting on click event listener
-        b1.setOnClickListener {
+        binding.buttonActivity.setOnClickListener {
             val intent = Intent(this@MainActivity, ActivityActivity::class.java)
             startActivity(intent)
         }
 
-        val b2 = findViewById<View>(R.id.button_service) as Button
+        // val b2 = findViewById<View>(R.id.button_service) as Button
         // setting on click event listener
-        b2.setOnClickListener {
+        binding.buttonService.setOnClickListener {
             val intent = Intent(this@MainActivity, ServiceActivity::class.java)
             startActivity(intent)
         }
 
-        val b3 = findViewById<View>(R.id.button_content_provider) as Button
+        // val b3 = findViewById<View>(R.id.button_content_provider) as Button
         // setting on click event listener
-        b3.setOnClickListener {
+        binding.buttonContentProvider.setOnClickListener {
             val intent = Intent(this@MainActivity, ContentProviderActivity::class.java)
             startActivity(intent)
         }
 
-        val b4 = findViewById<View>(R.id.button_broadcast_receiver) as Button
+        // val b4 = findViewById<View>(R.id.button_broadcast_receiver) as Button
         // setting on click event listener
-        b4.setOnClickListener {
+        binding.buttonBroadcastReceiver.setOnClickListener {
             val intent = Intent(this@MainActivity, BroadcastReceiverActivity::class.java)
             startActivity(intent)
         }

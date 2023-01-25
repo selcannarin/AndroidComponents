@@ -4,17 +4,17 @@ import android.content.Intent
 import android.content.IntentFilter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
+import com.selcannarin.androidcomponents.databinding.ActivityBroadcastReceiverBinding
 
 class BroadcastReceiverActivity : AppCompatActivity() {
     lateinit var receiver: AirPlaneBroadcastReceiver
+    private lateinit var binding: ActivityBroadcastReceiverBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_broadcast_receiver)
-        val show = findViewById<View>(R.id.button_show) as Button
+        binding = ActivityBroadcastReceiverBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         // setting on click event listener
-        show.setOnClickListener {
+        binding.buttonShow.setOnClickListener {
             receiver = AirPlaneBroadcastReceiver()
             // Intent Filter is useful to determine which apps wants to receive
             // which intents,since here we want to respond to change of
